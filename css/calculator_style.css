@@ -34,6 +34,13 @@
     padding: 10px 0px 10px 30px;
     text-align: left;
 }
+.footerStr {
+    text-align: center;
+    font-size: 0.5em;
+    padding: 30px 30px 3px 30px;
+    max-width: 500px;
+    opacity: 0.5;
+}
 
 .grey {
     color: black;
@@ -100,15 +107,16 @@
 #zero { grid-area: zeroBtn; }
 #point { grid-area: pointBtn; }
 #equal { grid-area: equalBtn; }
+#footerTxt { grid-area: footerStr; }
 
 .container-calculator {
     display: grid;
     grid-template-areas: 
-        'display2Str display2Str display2Str display2Str'
         'displayStr displayStr displayStr displayStr'
         'clearBtn signBtn percentBtn divideBtn'
         'sevenBtn eightBtn nineBtn multiplyBtn'
         'fourBtn fiveBtn sixBtn minusBtn'
         'oneBtn twoBtn threeBtn plusBtn'
-        'zeroBtn zeroBtn pointBtn equalBtn';
+        'zeroBtn zeroBtn pointBtn equalBtn'
+        'footerStr footerStr footerStr footerStr';
 }
