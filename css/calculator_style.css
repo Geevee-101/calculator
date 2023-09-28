@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1.15em;
+    background-color: #59564b;
+    color: #cccccc;
+}
+
+.container-calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.square {
+    border: 0px;
+    padding: 10px 30px;
+    margin: 3px;
+}
+.displayStr {
+    text-align: right;
+    font-size: 2em;
+    padding: 3px 30px 3px 30px;
+}
+.twoLtr {
+    padding: 10px 0px;
+}
+.zeroBtn {
+    padding: 10px 0px 10px 30px;
+    text-align: left;
+}
+
+.grey {
+    color: black;
+    background-color: grey;
+}
+.grey:hover {
+    background-color: lightgrey;
+}
+.grey:active {
+    background-color: rgb(77, 77, 77);
+}
+.grey-active {
+    background-color: rgb(77, 77, 77);
+    transition: 0.1s;
+}
+.dimGrey {
+    background-color: dimgrey;
+}
+.dimGrey:hover {
+    background-color: darkgrey;
+}
+.dimGrey:active {
+    background-color: rgb(66, 66, 66);
+}
+.dimGrey-active {
+    background-color: rgb(66, 66, 66);
+    transition: 0.1s;
+}
+.yellow {
+    background-color: #c8ab37;
+}
+.yellow:hover {
+    background-color: #fae075;
+}
+.yellow:active {
+    background-color: #917c28;
+}
+.yellow-active {
+    background-color: #917c28;
+    transition: 0.1s;
+}
+/*.op:focus {
+    background-color: #917c28;
+}*/
+
+#display2 { grid-area: display2Str; }
+#display { grid-area: displayStr; }
+#clear { grid-area: clearBtn; }
+#sign { grid-area: signBtn; }
+#percent { grid-area: percentBtn; }
+#divide { grid-area: divideBtn; }
+#seven { grid-area: sevenBtn; }
+#eight { grid-area: eightBtn; }
+#nine { grid-area: nineBtn; }
+#multiply { grid-area: multiplyBtn; }
+#four { grid-area: fourBtn; }
+#five { grid-area: fiveBtn; }
+#six { grid-area: sixBtn; }
+#minus { grid-area: minusBtn; }
+#one { grid-area: oneBtn; }
+#two { grid-area: twoBtn; }
+#three { grid-area: threeBtn; }
+#plus { grid-area: plusBtn; }
+#zero { grid-area: zeroBtn; }
+#point { grid-area: pointBtn; }
+#equal { grid-area: equalBtn; }
+
+.container-calculator {
+    display: grid;
+    grid-template-areas: 
+        'display2Str display2Str display2Str display2Str'
+        'displayStr displayStr displayStr displayStr'
+        'clearBtn signBtn percentBtn divideBtn'
+        'sevenBtn eightBtn nineBtn multiplyBtn'
+        'fourBtn fiveBtn sixBtn minusBtn'
+        'oneBtn twoBtn threeBtn plusBtn'
+        'zeroBtn zeroBtn pointBtn equalBtn';
+}
