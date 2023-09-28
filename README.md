@@ -1,4 +1,4 @@
-# calculator
+# Calculator
 
 An online calculator. Made with JavaScript, HTML, and CSS.
 
